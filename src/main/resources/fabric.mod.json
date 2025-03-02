@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enhancedbiomes",
+	"version": "${version}",
+	"name": "Enhanced Biomes",
+	"description": "Enhanced Biomes completely overhauls the vanilla biomes while being 100% configurable",
+	"authors": [
+		"Mildzz"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/",
+		"sources": "https://github.com/Mildzz/enhancedbiomes"
+	},
+	"license": "MIT",
+	"icon": "assets/enhancedbiomes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.mildzz.enhancedbiomes.EnhancedBiomes"
+		],
+		"fabric-datagen": [
+			"dev.mildzz.enhancedbiomes.EnhancedBiomesDataGenerator"
+		],
+		"client": [
+			"dev.mildzz.enhancedbiomes.EnhancedBiomesClient"
+		]
+	},
+	"mixins": [
+		"enhancedbiomes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
